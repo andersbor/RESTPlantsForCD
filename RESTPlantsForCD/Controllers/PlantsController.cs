@@ -25,9 +25,9 @@ namespace RESTPlantsForCD.Controllers
 
         // GET api/<PlantsController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public Plant Get(int id)
         {
-            return "value";
+            return _manager.GetById(id);
         }
 
         // POST api/<PlantsController>

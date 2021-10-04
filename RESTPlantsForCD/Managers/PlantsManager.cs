@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using RESTPlantsForCD.Models;
 
 namespace RESTPlantsForCD.Managers
@@ -15,6 +16,11 @@ namespace RESTPlantsForCD.Managers
         public List<Plant> GetAll()
         {
             return Data;
+        }
+
+        public Plant GetById(int id)
+        {
+            return Data.FirstOrDefault(plant => plant.Id == id);
         }
 
         public Plant Add(Plant plant)
