@@ -17,6 +17,13 @@ namespace RESTPlantsForCD.Managers
             return Data;
         }
 
+        public Plant Add(Plant plant)
+        {
+            plant.Id = _nextId++;
+            Data.Add(plant);
+            return plant;
+        }
+
 
     }
 }
