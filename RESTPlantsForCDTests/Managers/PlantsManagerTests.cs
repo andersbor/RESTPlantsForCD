@@ -12,7 +12,7 @@ namespace RESTPlantsForCD.Managers.Tests
     public class PlantsManagerTests
     {
         [TestMethod()]
-        public void GetAllTest()
+        public void TestItAll()
         {
             Assert.Fail();
         }
